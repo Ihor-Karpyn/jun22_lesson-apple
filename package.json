@@ -1,0 +1,16 @@
+{
+  "name": "apple_header",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.8.3"
+  },
+  "scripts": {
+    "vova": "echo Hello world !"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
