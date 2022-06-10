@@ -21,10 +21,28 @@ body {
   backdrop-filter: saturate(180%) blur(20px);
 }
 
+.nav-toggler-label::after {
+  content: '='
+}
+
+.nav-toggler:checked ~ .nav-toggler-label::after {
+  content: 'X';
+}
+
+.nav-toggler:checked ~ .nav .nav__list {
+  height: auto;
+}
+
 .nav__list {
+  height: 0;
+
   padding: 0;
   margin: 0;
   list-style-type: none;
+  overflow: hidden;
+
+  transition-property: height;
+  transition-duration: 1s;
 }
 
 @media (min-width: 640px) {
