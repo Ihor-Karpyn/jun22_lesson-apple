@@ -2,15 +2,25 @@
   "name": "apple_header",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@linthtml/linthtml": "^0.8.3"
-  },
+  "main": "app.js",
+  "source": "src/index.html",
   "scripts": {
-    "vova": "echo Hello world !"
+    "start": "npx parcel ./src/index.html --open --port 8080",
+    "build": "parcel build ./src/index.html --public-url https://budnikoleksii.github.io/layout_calendar/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solaryasha/apple_header.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solaryasha/apple_header/issues"
+  },
+  "homepage": "https://github.com/solaryasha/apple_header#readme",
+  "devDependencies": {
+    "parcel": "^1.12.3",
+    "sass": "^1.52.3"
+  }
 }
